@@ -1,0 +1,38 @@
+<nav class="nav nav-pills nav-fill">
+  <a
+    class="nav-link"
+    [class.active]="activePage == 'home'"
+    (click)="activePage = 'home'"
+  >
+    Home
+  </a>
+  <a
+    class="nav-link"
+    [class.active]="activePage == 'feature'"
+    (click)="activePage = 'feature'"
+  >
+    Feature
+  </a>
+  <a
+    class="nav-link"
+    [class.active]="activePage == 'pricing'"
+    (click)="activePage = 'pricing'"
+  >
+    Pricing
+  </a>
+</nav>
+
+<div [ngSwitch]="activePage">
+  <p *ngSwitchCase="'home'">
+    Home
+  </p>
+  <p *ngSwitchCase="'feature'">
+    Feature
+  </p>
+  <p *ngSwitchCase="'pricing'">
+    Pricing
+  </p>
+  <p *ngSwitchDefault>
+    Nenhuma página selecionada
+  </p>
+</div>

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DirectiveNgifComponent } from './directive-ngif/directive-ngif.component';
 import { TesteComponent } from './teste/teste.component';
+import { DirectiveNgswitchComponent } from './directive-ngswitch/directive-ngswitch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectiveNgifComponent,
-    TesteComponent
+    TesteComponent,
+    DirectiveNgswitchComponent
   ],
   imports: [
     BrowserModule,
