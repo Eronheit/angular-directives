@@ -1,1 +1,18 @@
 <p>directive-ngif works!</p>
+
+<div *ngIf="cursos.length > 0">Lista de cursos</div>
+
+<div *ngIf="cursos.length == 0">Não há cursos.</div>
+
+<div *ngIf="mostrarCursos">Pode exibir cursos</div>
+
+<div *ngIf="!mostrarCursos">Não pode exibir cursos.</div>
+
+<button (click)="toggleShowCourses()">Mostrar/esconder cursos</button>
+
+
+<h5>Hidden como alternativa</h5>
+<div [hidden]='!mostrarCursos'>
+  Pode exibir cursos
+</div>
+<div [hidden]="mostrarCursos">Não pode exibir cursos</div>
