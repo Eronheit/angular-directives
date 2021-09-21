@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesCustomComponent implements OnInit {
 
+  cursos: string[] = [];
+  mostrarCursos: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleShowCourses() {
+    this.mostrarCursos = !this.mostrarCursos;
   }
 
 }
